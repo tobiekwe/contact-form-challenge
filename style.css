@@ -1,0 +1,127 @@
+.attribution { font-size: 11px; text-align: center; margin-bottom: 20px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    
+    
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(210, 220, 242);
+}
+
+.contact-form{
+  width: 36%;
+  background-color: white;
+  margin: 16px auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.name-group{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 12px;
+}
+.name-field{
+  display: flex;
+  width: 100%;
+  flex-direction: column;  
+}
+
+.name-field input{
+  padding: 10px 0px;
+  border-radius: 6px;
+  border: 2px solid lightgray;
+  width: 100%;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.email input{
+  padding: 10px 0px;
+  border-radius: 6px;
+  border: 2px solid lightgray;
+}
+
+.select{
+  display: flex;
+  flex-direction: column;
+}
+
+.query-select{
+  display: flex;
+  gap: 10px;
+}
+
+.field-select{
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: 2px solid lightgray;
+}
+
+.message-field{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+textarea{
+  border: 2px solid lightgray;
+  border-radius: 6px;
+}
+
+.consent-field{
+  width: 100%;
+  margin: 20px 0;
+}
+
+.btn{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+
+.btn button{
+  background-color: rgb(88, 88, 220);
+  height: 50px;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: x-large;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.helper-text{
+  color: red;
+  display: none;
+}
+
+dialog{
+  border: 1px solid green;
+  background-color: rgb(97, 250, 97);
+  border-radius: 20px;
+  box-shadow: 2px 4px 12px 0.4;
+}
+
+@media (max-width: 920px) {
+  .contact-form{
+    width: 46%;
+  }
+  .name-group{
+    display: block;
+  }
+
+  .query-select{
+    display: block;
+    padding-right: 20px;
+  }
+}
