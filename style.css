@@ -21,7 +21,7 @@ body{
   width: 100%;
   height: auto;
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 .name-field{
   display: flex;
@@ -30,10 +30,12 @@ body{
 }
 
 .name-field input{
-  padding: 10px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: large;
   border-radius: 6px;
   border: 2px solid lightgray;
-  width: 100%;
 }
 
 .email {
@@ -43,7 +45,8 @@ body{
 }
 
 .email input{
-  padding: 10px 0px;
+  padding: 10px 10px;
+  font-size: large;
   border-radius: 6px;
   border: 2px solid lightgray;
 }
@@ -60,6 +63,8 @@ body{
 
 .field-select{
   width: 100%;
+  font-size: large;
+  font-family: inherit;
   padding: 10px 10px;
   border-radius: 6px;
   border: 2px solid lightgray;
@@ -71,9 +76,12 @@ body{
   margin: 20px 0;
 }
 
-textarea{
+#message{
   border: 2px solid lightgray;
   border-radius: 6px;
+  padding: 10px 10px;
+  font-size: large;
+  font-family: inherit;
 }
 
 .consent-field{
@@ -81,6 +89,10 @@ textarea{
   margin: 20px 0;
 }
 
+.checkbox-label{
+  font-size: large;
+  /* color: red; */
+}
 .btn{
   display: flex;
   width: 100%;
@@ -112,7 +124,7 @@ dialog{
   box-shadow: 2px 4px 12px 0.4;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 984px) {
   .contact-form{
     width: 46%;
   }
